@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    tools:context="societymanagementsystem.manage.management.com.cipla.user">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/linLoginLay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="15dp"
+        android:background="@color/White"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/mahindraName"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/cipla_logo" />
+
+
+        <View
+            android:id="@+id/generalinfoline"
+            android:layout_width="match_parent"
+            android:layout_height="1.0dp"
+            android:layout_below="@+id/generalinfo"
+            android:layout_marginTop="10dp"
+            android:background="@color/black" />
+
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:clipToPadding="false"
+            android:orientation="vertical"
+            android:padding="10sp"
+            android:layout_marginTop="25dp"
+            tools:ignore="UselessParent">
+            <EditText
+                android:id="@+id/edit_username"
+                android:layout_width="fill_parent"
+                android:layout_height="51dip"
+                android:background="@drawable/rounded_edittext"
+                android:drawableLeft="@drawable/user"
+                android:drawablePadding="20dp"
+                android:ems="10"
+                android:fontFamily="Roboto"
+                android:hint="Name"
+                android:textSize="14dp"
+
+                android:minEms="0"
+                android:minWidth="0dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/peach"
+                android:textColorHint="@color/Gray" >
+
+            </EditText>
+
+
+
+
+
+
+            <EditText
+                android:id="@+id/edit_mobile"
+                android:layout_width="fill_parent"
+                android:layout_height="51dip"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/rounded_edittext"
+                android:drawableLeft="@drawable/smartmobile"
+                android:drawablePadding="20dp"
+                android:ems="10"
+                android:fontFamily="Roboto"
+                android:hint="Mobile No."
+                android:inputType="number"
+                android:textSize="14dp"
+                android:maxLength="10"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+
+                android:textColor="@color/peach"
+                android:textColorHint="@color/Gray"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        </LinearLayout>>
+
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+
+            android:background="@drawable/model_button"
+            android:clickable="false"
+            android:text="Start"
+            android:textAllCaps="false"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/White"
+            android:textSize="18sp" />
+        </LinearLayout>>
+    </ScrollView>
